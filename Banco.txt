@@ -1,0 +1,26 @@
+create table users(
+    id int not null AUTO_INCREMENT,
+    name varchar(255) not null,
+    email varchar(255) not null,
+    password varchar(255) not null,
+    primary key(id)
+);
+
+insert into users (name, email, password) values ("Yuri","TADS", "asdfkjgh");
+insert into users (name, email, password) values ("Joana","TADS", "dfjghsd");
+
+
+create table messages(
+    id int not null AUTO_INCREMENT,
+    mes varchar(255) not null,
+    sigla varchar(255) not null,
+    total int not null,
+    primary key(id)
+);
+
+insert into messages (mes, sigla, total) values ("JANEIRO","JAN", "139");
+insert into messages (mes, sigla, total) values ("FEVEREIRO","FEV", "900");
+insert into messages (mes, sigla, total) values ("MARÇO","MAR", "784");
+insert into messages (mes, sigla, total) values ("ABRIL","ABR", "800");
+insert into messages (mes, sigla, total) values ("MAIO","MAI", "672");
+insert into messages (mes, sigla, total) values ("JUNHO","JUN", "731");
